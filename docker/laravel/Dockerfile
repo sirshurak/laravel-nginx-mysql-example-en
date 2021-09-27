@@ -13,5 +13,3 @@ RUN set -eux && \
   apk del .build-php-dependencies && \
   docker-php-ext-install pdo_mysql && \
   curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-
-CMD [ "sh", "-x", "../laravel_build.sh" ]
